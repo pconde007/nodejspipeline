@@ -12,7 +12,7 @@ node {
      }
    }
    stage('Docker Build & Push') {
-      sh "docker login -u pconde007 -p dckr_pat__S2dI7uYrU7Wy3TfjdGtJw_EDbg"
+      sh "docker login -u pconde0007 -p dckr_pat__S2dI7uYrU7Wy3TfjdGtJw_EDbg"
       //sh "docker push 
    
    
@@ -20,7 +20,7 @@ node {
    /*
    stage('Docker Build & Push') {
       docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
-      def nuestraapp = docker.build("pconde0007/nodejsapp:${gitcommit}", ".")
+      def nuestraapp = docker.build("pconde007/nodejsapp:${gitcommit}", ".")
       nuestraapp.push()
      }
    }
