@@ -11,6 +11,7 @@ node {
      contenedortest.inside {
        sh 'npm install --only=dev'
        sh 'npm test'
+       //pruebas
      }
    }                   
    stage('Docker Build & Push') {
