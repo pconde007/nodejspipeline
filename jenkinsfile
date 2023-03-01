@@ -13,7 +13,7 @@ node {
    }
    stage('Docker Build & Push') {
       //docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
-      docker.withRegistry(sh 'docker login -u pconde007 -p dckr_pat__S2dI7uYrU7Wy3TfjdGtJw_EDbg') {
+      docker.withRegistry(sh 'docker login -u pconde007 --password-stdin dckr_pat__S2dI7uYrU7Wy3TfjdGtJw_EDbg') {
       def nuestraapp = docker.build("pconde007/nodejsapp:${gitcommit}", ".")
       nuestraapp.push()
      }
