@@ -13,7 +13,7 @@ node {
    }
    
    stage('Docker Build & Push') {
-      sh "docker login -u pconde007 -p dckr_pat__S2dI7uYrU7Wy3TfjdGtJw_EDbg"   
+      sh "docker login -u pconde007 -p dckr_pat__S2dI7uYrU7Wy3TfjdGtJw_EDbg."   
    }
    
    /*
